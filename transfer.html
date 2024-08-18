@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money - TransferNow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="" class="logo">Black Transfer</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="transfer.html">Transfer</a></li>
+                <li><a href="fees.html">Fees</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="transfer">
+        <h2 style="display: flex;padding-left: 50px; padding-right: 50px;">Transfer money now: Check the amount you wish to send and see the associated sending fees!!</h2>
+
+
+        <form id="transfer-form">
+            <label for="from-currency">From:</label>
+            <select id="from-currency" name="from_currency">
+                <option value="EUR">EUR</option>
+                <option value="USD">GMD</option>
+                <!-- Add more currencies as needed -->
+            </select>
+
+            <label for="to-currency">To:</label>
+            <select id="to-currency" name="to_currency">
+                <option value="EUR">EUR</option>
+                <option value="USD">GMD</option>
+                <!-- Add more currencies as needed -->
+            </select>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <div id="calculated-fee" style="margin: 10px 0; font-weight: bold;"></div>
+
+            <button type="submit" class="cta-btn">Calculate</button>
+        </form>
+    </section>
+    <footer class="container-fluid footer_section">
+        <p>
+           
+           
+          &copy; 2024 Div by
+          <a href="https://malaminjagana.github.io/Malaminjagana-portfolio/"><button>M.Jagana</button> </a>
+          
+          <img src="mala.jpg.jpeg" alt="nicepicture" width="90px" style="border-radius: 60px;">
+         
+        </p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
